@@ -3,12 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LinkedIn Profiles</title>
+<title> University of Houston Theme</title>
 <style>
   body {
-    font-family: Arial, sans-serif;
+    font-family: "Arial", sans-serif;
     margin: 0;
     padding: 20px;
+    background-color: #C0C0C0; /* University of Houston silver */
+    color: #FFFFFF; /* White text */
+  }
+  .global-logo{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 0px;
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 1px);
+    box-sizing: border-box;
+    background-color: #54585a; /* gray background for profiles */
+    
+  }
+  .college{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 0px;
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 1px);
+    box-sizing: border-box;
+    background-color: #C8102E; /* White background for profiles */
+    
   }
   .profile {
     border: 1px solid #ccc;
@@ -18,6 +42,8 @@
     vertical-align: top;
     width: calc(25% - 20px);
     box-sizing: border-box;
+    background-color: #FFFFFF; /* White background for profiles */
+    color: #000000; /* Black text for profiles */
   }
   .profile img {
     max-width: 100%;
@@ -30,21 +56,31 @@
 </style>
 </head>
 <body>
-  <div class="profile">  <!-- Profile 1 content ... -->
+  <header>
+    <div class="global-logo"><a href="https://www.uh.edu/" tabindex="2"><img alt="University of Houston" src="https://www.uh.edu/images/uh-secondary.svg" style="height: 28px;"></a></div>
+    
+    <div class="college"><a href="https://www.egr.uh.edu/" target="_blank" aria-label="Cullen College of Engineering">Cullen College of Engineering</a>  
+     <p></p>
+      <a href="https://dot.egr.uh.edu/programs/undergraduate/computer-information-systems" target="_blank" aria-label="Technology Division">Technology Division</a></div>
+        
+  </header>
+  <div class="profile">
+    <!-- Profile 1 content ... -->
     <img src="profile1.jpg" alt="LinkedIn Profile 1">
     <h2>Puja Acharya</h2>
     <p>CIS</p>
-    <a href="https://www.linkedin.com/in/puja-acharya-b5a536202/">LinkedIn Profile</a>
+    <a href="https://www.linkedin.com/in/puja-acharya-b5a536202/"target="_blank">LinkedIn Profile</a>
   </div>
-  <div class="profile"> <!-- Profile 2 content ... -->
+  <div class="profile">
+    <!-- Profile 2 content ... -->
     <img src="profile2.jpg" alt="LinkedIn Profile 2">
-    <h2>Jane </h2>
-    <p>CIS</p>
-    <a href="https://www.linkedin.com/in/janesmith/">LinkedIn Profile</a>
+    <h2>Vy Dang</h2>
+    <p>Teaching and Learning, BS</p>
+    <a href="https://www.linkedin.com/in/vydang2003/"target="_blank">LinkedIn Profile</a>
   </div>
-  <div class="reference">     <!-- Include your QR code image here -->
+  <div class="reference">
+    <!-- Include your QR code image here -->
     <p>This web page showcases the LinkedIn profiles of professionals in various fields. Feel free to connect with them to learn more about their experiences and expertise.</p>
   </div>
 </body>
 </html>
-
