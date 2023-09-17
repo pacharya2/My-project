@@ -1,96 +1,103 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> University of Houston Theme</title>
+<title>University of Houston Theme</title>
 <style>
   body {
     font-family: "Arial", sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     background-color: #C0C0C0; /* University of Houston silver */
     color: #FFFFFF; /* White text */
   }
-  .global-logo{
-    border: 1px solid #ccc;
-    border-radius:7px;
+  .header {
+    background-color: #C8102E; /* University of Houston Red */
     padding: 10px;
-    margin: 0px;
-    display: inline-block;
-    vertical-align: top;
-    width: calc(100% - 1px);
-    box-sizing: border-box;
-    background-color: #54585a; /* gray background for profiles */
-    
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   }
-  .college{
-    border: 1px solid #ccc;
-    border-radius:7px;
+  .header img {
+    height: 28px;
+  }
+  .college {
+    background-color: #54585a; /* Gray background for college info */
     padding: 10px;
-    margin: 0px;
-    display: inline-block;
-    vertical-align: top;
-    width: calc(100% - 1px);
-    box-sizing: border-box;
-    background-color: #C8102E; /* White background for profiles
-    */
-    box-shadow: 1px -2px 20px 2px #000000;
-
-    
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  .college a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
   }
   .profile {
     border: 1px solid #ccc;
-    border-radius:7px;
+    border-radius: 7px;
     padding: 20px;
-    margin: 0px;
-    display: inline-block;
-    vertical-align: top;
-    width: calc(60% - 20px);
-    box-sizing: border-box;
+    margin: 10px;
+    width: calc(45% - 20px);
     background-color: #FFFFFF; /* White background for profiles */
     color: #000000; /* Black text for profiles */
-    box-shadow: 1px -2px 20px 2px #000000;
-
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
   }
   .profile img {
     max-width: 100%;
     height: auto;
+    border-radius: 50%; /* Make profile images round */
   }
-  .reference {
-    margin-top: 30px;
+  .profile h2 {
+    margin-top: 10px;
+  }
+  .profile p {
     font-style: italic;
+    color: #777777; /* Gray text for job title */
+  }
+  .profile a {
+    text-decoration: none;
+    color: #C8102E; /* University of Houston Red for links */
+  }
+  .profile a:hover {
+    text-decoration: underline;
   }
 </style>
 </head>
 <body>
-  <header>
-    <div class="global-logo"><a href="https://www.uh.edu/" tabindex="2"><img alt="University of Houston" src="https://www.uh.edu/images/uh-secondary.svg" style="height: 28px;"></a></div>
-    
-    <div class="college"><a href="https://www.egr.uh.edu/" target="_blank" aria-label="Cullen College of Engineering">Cullen College of Engineering</a>  
-     <p></p>
-      <a href="https://dot.egr.uh.edu/programs/undergraduate/computer-information-systems" target="_blank" aria-label="Technology Division">Technology Division</a></div>
-        
-  </header>
-  <p></p>
-  <div class="profile">
-    <!-- Profile 1 content ... -->
-    <img src="https://media.licdn.com/dms/image/D5635AQEtjuH98OJNig/profile-framedphoto-shrink_400_400/0/1693623616578?e=1694271600&v=beta&t=dgvHhoiMHxl55ETYYK2jHBVVoC6XicaTQSyvKysYyME" alt="LinkedIn Profile 1">
-    <h2>Puja Acharya</h2>
-    <p>CIS</p>
-    <a href="https://www.linkedin.com/in/puja-acharya-b5a536202/"target="_blank">LinkedIn Profile</a>
+  <div class="header">
+    <a href="https://www.uh.edu/" tabindex="2">
+      <img alt="University of Houston" src="https://www.uh.edu/images/uh-secondary.svg">
+    </a>
   </div>
-  <p></p>
-  <div class="profile">
-    <!-- Profile 2 content ... -->
-    <img src="https://media.licdn.com/dms/image/D5635AQHiIJOXSLvSEA/profile-framedphoto-shrink_800_800/0/1690906432464?e=1694228400&v=beta&t=fumnYlab_BeLSLVp4OrrU_b3uLRu5pX90bo6XadAzUo" alt="LinkedIn Profile 2">
-    <h2>Vy Dang</h2>
-    <p>Teaching and Learning, BS</p>
-    <a href="https://www.linkedin.com/in/vydang2003/"target="_blank">LinkedIn Profile</a>
+  <div class="college">
+    <a href="https://www.egr.uh.edu/" target="_blank" aria-label="Cullen College of Engineering">Cullen College of Engineering</a>
+    <p></p>
+    <a href="https://dot.egr.uh.edu/programs/undergraduate/computer-information-systems" target="_blank" aria-label="Technology Division">Technology Division</a>
+  </div>
+  <div class="container">
+    <div class="profile">
+      <img src="https://media.licdn.com/dms/image/D5635AQEtjuH98OJNig/profile-framedphoto-shrink_400_400/0/1693623616578?e=1694271600&v=beta&t=dgvHhoiMHxl55ETYYK2jHBVVoC6XicaTQSyvKysYyME" alt="LinkedIn Profile 1">
+      <h2>Puja Acharya</h2>
+      <p>CIS</p>
+      <a href="https://www.linkedin.com/in/puja-acharya-b5a536202/" target="_blank">LinkedIn Profile</a>
+    </div>
+    <div class="profile">
+      <img src="https://media.licdn.com/dms/image/D5635AQHiIJOXSLvSEA/profile-framedphoto-shrink_800_800/0/1690906432464?e=1694228400&v=beta&t=fumnYlab_BeLSLVp4OrrU_b3uLRu5pX90bo6XadAzUo" alt="LinkedIn Profile 2">
+      <h2>Vy Dang</h2>
+      <p>Teaching and Learning, BS</p>
+      <a href="https://www.linkedin.com/in/vydang2003/" target="_blank">LinkedIn Profile</a>
+    </div>
   </div>
   <div class="reference">
     <!-- Include your QR code image here -->
-    <p>reference.</p>
+    <p>Reference.</p>
   </div>
 </body>
 </html>
